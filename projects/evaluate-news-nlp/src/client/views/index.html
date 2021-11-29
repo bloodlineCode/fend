@@ -2,41 +2,37 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title>Test</title>
-        <link rel="stylesheet" href="/styles/resets.css">
-        <link rel="stylesheet" href="/styles/base.css">
-        <link rel="stylesheet" href="/styles/header.css">
-        <link rel="stylesheet" href="/styles/form.css">
-        <link rel="stylesheet" href="/styles/footer.css">
+        <title>NLP</title>
     </head>
 
     <body>
 
         <header>
-            <div class="">
-                Logo
-            </div>
-            <div class="">
-                navigation
+            <div class="logo">
+               <h1> Welcome to Udacity's Natural Language Processing </h1>
             </div>
         </header>
 
         <main>
-            <section>
+            <section id="formSect">
                 <form class="" onsubmit="return handleSubmit(event)">
-                    <input id="name" type="text" name="input" value="" onblur="onBlur()" placeholder="Name">
-                    <input type="submit" name="" value="submit" onclick="return handleSubmit(event)" onsubmit="return handleSubmit(event)">
+                    <input id="url" type="text" name="input" value="" placeholder="Enter the URL">
+                    <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return handleSubmit(event)">
                 </form>
             </section>
 
             <section>
                 <strong>Form Results:</strong>
-                <div id="results"></div>
+                <div id="scoreTag"></div>
+                <div id="agreement"></div>
+                <div id="subjectivity"></div>
+                <div id="confidence"></div>
+                <div id="irony"></div>
             </section>
         </main>
 
         <footer>
-            <p>This is a footer</p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, consequuntur atque? Adipisci id iste ut blanditiis maiores, nobis magni aut quae corrupti quibusdam ipsum ipsam cumque neque eius aliquid exercitationem!
         </footer>
 
     </body>

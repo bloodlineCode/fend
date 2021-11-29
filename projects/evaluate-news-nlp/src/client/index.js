@@ -1,7 +1,12 @@
-import { checkForName } from './js/nameChecker'
+// Adding all JS files
+import { validateInput } from './js/formValidator'
 import { handleSubmit } from './js/formHandler'
 
-console.log(checkForName);
+// Adding all SCSS files for styles
+import './styles/resets.scss'
+import './styles/base.scss'
+import './styles/footer.scss'
+import './styles/form.scss'
+import './styles/header.scss'
 
-alert("I EXIST")
-console.log("CHANGE!!");
+export { handleSubmit, validateInput }
