@@ -13,7 +13,7 @@ module.exports = {
   },
   output: {
     libraryTarget: 'var',
-    library: 'Client',
+    library: 'NLPClient',
   },
   mode: 'production',
   module: {

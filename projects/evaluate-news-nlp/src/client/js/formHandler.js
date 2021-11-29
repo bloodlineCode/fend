@@ -5,7 +5,7 @@ function handleSubmit(event) {
   let formText = document.getElementById('url').value
   console.log('Form URL value:', formText)
 
-  if (Client.validateInput(formText)) {
+  if (NLPClient.validateInput(formText)) {
     console.log('::: Form Submitted :::')
 
     postData('http://localhost:8080/mcapi', { url: formText }).then(function (
