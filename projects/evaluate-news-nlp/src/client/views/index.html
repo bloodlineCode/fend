@@ -35,5 +35,12 @@
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, consequuntur atque? Adipisci id iste ut blanditiis maiores, nobis magni aut quae corrupti quibusdam ipsum ipsam cumque neque eius aliquid exercitationem!
         </footer>
 
+        <script>
+            if('serviceWorker' in navigator){
+                window.addEventListener('load', () =>{
+                    navigator.serviceWorker.register('/service-worker.js');
+                })
+            }
+        </script>
     </body>
 </html>
